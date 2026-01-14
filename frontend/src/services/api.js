@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:5001/api";
+const BASE_URL = "https://student-tracker-backend-h2q1.onrender.com/api";
+
 
 function getAuthHeaders() {
   const token = localStorage.getItem("token");
