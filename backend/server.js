@@ -15,7 +15,13 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "student-tracker-68dfu6x9c-bishal-pals-projects-45b2d78d.vercel.app",
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // Routes
